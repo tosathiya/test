@@ -1,0 +1,7 @@
+from wix import media
+
+client = media.Client(api_key="MY_API_KEY", api_secret="MY_API_SECRET")
+image  = client.upload_image_from_path('my_files/husky.jpg')
+
+image_id = image.get_id()
+print image_id
